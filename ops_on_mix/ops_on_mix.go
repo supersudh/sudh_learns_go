@@ -19,3 +19,10 @@ func main() {
 	var result float32 = floatNum32 + intNum32 // invalid operation: floatNum32 + intNum32 (mismatched types float32 and int32)compilerMismatchedTypes
 	// END ERROR CODE, blunders!!!
 }
+
+/*
+ops_on_mix git:(main) go build ops_on_mix.go
+# command-line-arguments
+./ops_on_mix.go:19:6: result declared and not used
+./ops_on_mix.go:19:23: invalid operation: floatNum32 + intNum32 (mismatched types float32 and int32)
+*/
